@@ -92,6 +92,7 @@ ul {
   display: flex;
   align-items: center;
   width: 1600px;
+  border-bottom: 1px;
 }
 
 .site-nav {
@@ -157,24 +158,27 @@ ul {
 /* hero */
 
 .hero {
+  display: block;
+
   background-color: var(--primary-background-color);
   text-align: center;
 }
 
 .hero-title {
+  display: block;
   color: var(--pimary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  margin-top: 200px;
+  padding-top: 200px;
   margin-bottom: 30px;
 }
 
 /* button */
 
 .hero-button {
-  display: inline-block;
+  display: block;
   padding: 10px 34px;
   min-width: 216px;
   text-align: center;
@@ -188,7 +192,9 @@ ul {
   background-color: var(--accent-color);
   cursor: pointer;
   border: none;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
 }
 
 .link :hover,
@@ -235,7 +241,7 @@ ul {
 .list-examples {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   /* width: 1170px; */
   margin: 0;
 }
