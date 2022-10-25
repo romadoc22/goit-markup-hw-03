@@ -21,7 +21,8 @@ body {
 .list-filter,
 .list-style,
 .list-examples,
-.list-team {
+.list-team,
+.list-footer {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -157,7 +158,7 @@ ul {
 /* hero */
 
 .section-hero {
-  max-width: 1230px;
+  max-width: 1600px;
   background-color: var(--primary-background-color);
   text-align: center;
   padding-top: 200px;
@@ -214,10 +215,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .itempr {
-  width: 270px;
+  max-width: 270px;
 }
 
 .itempr .section-preferens {
@@ -250,7 +252,7 @@ ul {
 .list-examples {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .list-examples .link-examples + .link-examples {
@@ -277,6 +279,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--pimary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .list-team .link-team + .link-team {
@@ -309,7 +315,12 @@ ul {
 
 /* footer */
 .footer {
+  max-width: 1600px;
   background-color: var(--primary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .link-footer .geo {
@@ -335,18 +346,31 @@ ul {
   color: var(--accent-color);
 }
 
+.footer-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--pimary-white-color);
+}
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
 /* portfolio */
 
 .list-filter {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
 }
 
 .item-filter {
   width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
   border: 1px solid #eeeeee;
 }
 a img {
@@ -422,16 +446,6 @@ a {
 .filter-btn :hover,
 .filter-btn :focus {
   background-color: var(--accent-color);
-  color: var(--pimary-white-color);
-}
-
-.footer-logo {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--pimary-white-color);
 }
 
