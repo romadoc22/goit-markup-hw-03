@@ -169,7 +169,8 @@ ul {
 
 .hero {
   display: block;
-  background-color: var(--primary-background-color);
+  /* background-color: var(--primary-background-color); */
+  background-image: url(../images/hat.jpg);
 }
 
 .hero-title {
